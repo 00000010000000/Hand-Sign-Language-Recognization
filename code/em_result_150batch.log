@@ -1,0 +1,342 @@
+nohup: 忽略输入
+Loading cached dataset from train_dataset.pt ...
+[DATASET] Loaded 2160 samples from cache.
+Loading cached dataset from test_dataset.pt ...
+[DATASET] Loaded 540 samples from cache.
+/home/user5/anaconda3/envs/cs7643-a1/lib/python3.14/site-packages/torch/nn/modules/transformer.py:392: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+Number of training samples: 2160
+Number of test samples: 540
+Unique labels: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71
+ 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89]
+Number of classes: 90
+Samples per class: [24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+ 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+ 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+ 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24]
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/protibeshi/p15_f_protibeshi.mp4', 'DATASET/pant/p12_c_pant.mp4', 'DATASET/chih/p6_c_chih.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [34, 38, 74, 80, 19, 65, 45, 61]
+[DEBUG] preds: [40, 30, 71, 71, 71, 71, 40, 40]
+Epoch [1/100], Batch [10/15], Loss: 4.5804, Accuracy: 1.33%
+Epoch [1] Training Loss: 4.6130, Training Accuracy: 1.64%
+Epoch [1] Validation Loss: 4.5554, Validation Accuracy: 1.83%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_0_2.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/chosma/p6_f_chosma.mp4', 'DATASET/nurse/p3_f_nurse.mp4', 'DATASET/plastic/p12_f_plastic.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [62, 86, 83, 11, 13, 3, 81, 52]
+[DEBUG] preds: [60, 30, 24, 60, 60, 60, 30, 60]
+Epoch [2/100], Batch [10/15], Loss: 4.3981, Accuracy: 4.00%
+Epoch [2] Training Loss: 4.4231, Training Accuracy: 4.07%
+Epoch [2] Validation Loss: 4.3564, Validation Accuracy: 3.56%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_1_4.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/jiggasha/p6_f_jiggasha.mp4', 'DATASET/valobasha/p8_c_valobasha.mp4', 'DATASET/sajano/p1_c_sajano.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [66, 20, 78, 65, 50, 43, 28, 50]
+[DEBUG] preds: [37, 57, 33, 12, 29, 42, 89, 29]
+Epoch [3/100], Batch [10/15], Loss: 3.8615, Accuracy: 12.00%
+Epoch [3] Training Loss: 3.9258, Training Accuracy: 9.82%
+Epoch [3] Validation Loss: 4.0874, Validation Accuracy: 5.89%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_2_6.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/football/p2_f_football.mp4', 'DATASET/bondhu/p16_f_bondhu.mp4', 'DATASET/sustho/p3_f_sustho.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [52, 25, 47, 70, 39, 30, 12, 81]
+[DEBUG] preds: [11, 12, 76, 23, 16, 37, 21, 34]
+Epoch [4/100], Batch [10/15], Loss: 3.5344, Accuracy: 16.67%
+Epoch [4] Training Loss: 3.6341, Training Accuracy: 13.89%
+Epoch [4] Validation Loss: 4.0570, Validation Accuracy: 5.61%
+
+No improvement for 1 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/khelowar/p1_f_khelowar.mp4', 'DATASET/kintu/p12_f_kintu.mp4', 'DATASET/tv/p7_c_tv.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [22, 53, 88, 69, 18, 30, 67, 87]
+[DEBUG] preds: [28, 50, 52, 55, 69, 75, 34, 45]
+Epoch [5/100], Batch [10/15], Loss: 3.0325, Accuracy: 26.00%
+Epoch [5] Training Loss: 3.3107, Training Accuracy: 19.62%
+Epoch [5] Validation Loss: 4.0475, Validation Accuracy: 6.72%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_4_7.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/boro/p1_c_boro.mp4', 'DATASET/aangti/p2_f_aangti.mp4', 'DATASET/protibondhi/p15_c_protibondhi.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [77, 51, 58, 45, 61, 4, 78, 33]
+[DEBUG] preds: [68, 40, 62, 45, 61, 4, 78, 33]
+Epoch [6/100], Batch [10/15], Loss: 3.0926, Accuracy: 27.33%
+Epoch [6] Training Loss: 3.1106, Training Accuracy: 23.44%
+Epoch [6] Validation Loss: 3.8427, Validation Accuracy: 8.89%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_5_9.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/shikkhok/p16_f_shikkhok.mp4', 'DATASET/sombar/p16_f_sombar.mp4', 'DATASET/lekha/p12_c_lekha.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [27, 80, 84, 60, 57, 37, 11, 76]
+[DEBUG] preds: [7, 68, 56, 50, 9, 37, 11, 34]
+Epoch [7/100], Batch [10/15], Loss: 2.9266, Accuracy: 27.33%
+Epoch [7] Training Loss: 2.9707, Training Accuracy: 24.76%
+Epoch [7] Validation Loss: 3.9301, Validation Accuracy: 10.22%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_6_10.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/hospital/p1_f_hospital.mp4', 'DATASET/dorja/p7_c_dorja.mp4', 'DATASET/lekha/p3_f_lekha.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [35, 12, 84, 19, 12, 11, 8, 42]
+[DEBUG] preds: [26, 12, 19, 53, 12, 31, 86, 14]
+Epoch [8/100], Batch [10/15], Loss: 2.8508, Accuracy: 24.00%
+Epoch [8] Training Loss: 2.8713, Training Accuracy: 27.69%
+Epoch [8] Validation Loss: 3.9122, Validation Accuracy: 10.06%
+
+No improvement for 1 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/pant/p8_f_pant.mp4', 'DATASET/chad/p14_f_chad.mp4', 'DATASET/chad/p15_f_chad.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [38, 31, 31, 21, 40, 3, 33, 41]
+[DEBUG] preds: [6, 50, 31, 25, 83, 89, 20, 5]
+Epoch [9/100], Batch [10/15], Loss: 2.7005, Accuracy: 25.33%
+Epoch [9] Training Loss: 2.6658, Training Accuracy: 30.20%
+Epoch [9] Validation Loss: 3.8611, Validation Accuracy: 11.28%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_8_11.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/chair/p1_f_chair.mp4', 'DATASET/ghori/p3_f_ghori.mp4', 'DATASET/upodesh/p14_c_upodesh.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [85, 30, 5, 16, 2, 71, 69, 14]
+[DEBUG] preds: [32, 30, 5, 9, 74, 43, 39, 47]
+Epoch [10/100], Batch [10/15], Loss: 2.7255, Accuracy: 31.33%
+Epoch [10] Training Loss: 2.6324, Training Accuracy: 31.47%
+Epoch [10] Validation Loss: 3.9075, Validation Accuracy: 10.83%
+
+No improvement for 1 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/chocolate/p4_f_chocolate.mp4', 'DATASET/sustho/p16_f_sustho.mp4', 'DATASET/moja/p7_f_moja.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [14, 47, 79, 78, 32, 56, 64, 22]
+[DEBUG] preds: [6, 47, 79, 26, 75, 26, 46, 22]
+Epoch [11/100], Batch [10/15], Loss: 2.4067, Accuracy: 38.00%
+Epoch [11] Training Loss: 2.4459, Training Accuracy: 37.80%
+Epoch [11] Validation Loss: 3.8258, Validation Accuracy: 11.50%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_10_12.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/valobasha/p15_c_valobasha.mp4', 'DATASET/cricket/p12_c_cricket.mp4', 'DATASET/jiggasha/p15_c_jiggasha.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [20, 89, 66, 68, 42, 19, 14, 58]
+[DEBUG] preds: [55, 43, 72, 68, 42, 84, 14, 44]
+Epoch [12/100], Batch [10/15], Loss: 2.2580, Accuracy: 46.67%
+Epoch [12] Training Loss: 2.3804, Training Accuracy: 39.73%
+Epoch [12] Validation Loss: 3.7722, Validation Accuracy: 12.61%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_11_13.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/boro/p7_c_boro.mp4', 'DATASET/somporko/p6_f_somporko.mp4', 'DATASET/soktishali/p1_c_soktishali.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [77, 75, 17, 20, 26, 80, 20, 2]
+[DEBUG] preds: [84, 75, 8, 20, 26, 68, 48, 67]
+Epoch [13/100], Batch [10/15], Loss: 2.3444, Accuracy: 44.00%
+Epoch [13] Training Loss: 2.3031, Training Accuracy: 40.91%
+Epoch [13] Validation Loss: 3.7729, Validation Accuracy: 11.61%
+
+No improvement for 1 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/prosno/p15_c_prosno.mp4', 'DATASET/chabi/p11_c_chabi.mp4', 'DATASET/mosha/p14_c_mosha.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [36, 3, 57, 54, 86, 83, 45, 79]
+[DEBUG] preds: [36, 75, 57, 56, 17, 83, 86, 76]
+Epoch [14/100], Batch [10/15], Loss: 2.1574, Accuracy: 48.00%
+Epoch [14] Training Loss: 2.2078, Training Accuracy: 43.96%
+Epoch [14] Validation Loss: 3.7983, Validation Accuracy: 12.17%
+
+No improvement for 2 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/ki/p2_f_ki.mp4', 'DATASET/lekha/p1_f_lekha.mp4', 'DATASET/tv/p4_c_tv.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [87, 84, 88, 2, 3, 29, 58, 14]
+[DEBUG] preds: [23, 37, 88, 26, 73, 29, 58, 51]
+Epoch [15/100], Batch [10/15], Loss: 2.2048, Accuracy: 40.67%
+Epoch [15] Training Loss: 2.2480, Training Accuracy: 44.13%
+Epoch [15] Validation Loss: 3.7577, Validation Accuracy: 11.61%
+
+No improvement for 3 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/pant/p13_c_pant.mp4', 'DATASET/sroddha/p7_c_sroddha.mp4', 'DATASET/hospital/p12_f_hospital.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [38, 21, 35, 39, 41, 26, 2, 6]
+[DEBUG] preds: [42, 21, 67, 39, 41, 26, 23, 6]
+Epoch [16/100], Batch [10/15], Loss: 2.1118, Accuracy: 46.67%
+Epoch [16] Training Loss: 2.1706, Training Accuracy: 45.31%
+Epoch [16] Validation Loss: 3.7863, Validation Accuracy: 11.89%
+
+No improvement for 4 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/sajano/p11_c_sajano.mp4', 'DATASET/virus/p14_c_virus.mp4', 'DATASET/subidha/p6_f_subidha.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [78, 39, 50, 37, 2, 43, 25, 68]
+[DEBUG] preds: [78, 39, 21, 37, 2, 34, 82, 54]
+Epoch [17/100], Batch [10/15], Loss: 2.1922, Accuracy: 43.33%
+Epoch [17] Training Loss: 2.1275, Training Accuracy: 46.36%
+Epoch [17] Validation Loss: 3.7376, Validation Accuracy: 13.61%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_16_14.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/doctor/p13_c_doctor.mp4', 'DATASET/sotru/p14_f_sotru.mp4', 'DATASET/protibondhi/p8_c_protibondhi.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [55, 73, 58, 52, 52, 89, 66, 18]
+[DEBUG] preds: [82, 73, 58, 51, 18, 89, 82, 18]
+Epoch [18/100], Batch [10/15], Loss: 2.0787, Accuracy: 47.33%
+Epoch [18] Training Loss: 2.1220, Training Accuracy: 47.11%
+Epoch [18] Validation Loss: 3.7772, Validation Accuracy: 14.17%
+
+Validation accuracy improved. Model saved to ./checkpoints/best_model_17_14.pth
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/subidha/p4_f_subidha.mp4', 'DATASET/goru/p1_f_goru.mp4', 'DATASET/sotru/p11_c_sotru.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [50, 29, 73, 61, 41, 31, 30, 31]
+[DEBUG] preds: [53, 29, 31, 5, 77, 31, 30, 31]
+Epoch [19/100], Batch [10/15], Loss: 2.1316, Accuracy: 48.67%
+Epoch [19] Training Loss: 2.1027, Training Accuracy: 47.60%
+Epoch [19] Validation Loss: 3.7848, Validation Accuracy: 11.44%
+
+No improvement for 1 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/attio/p6_c_attio.mp4', 'DATASET/sotto/p16_c_sotto.mp4', 'DATASET/sajano/p12_c_sajano.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [81, 72, 78, 1, 28, 43, 79, 12]
+[DEBUG] preds: [27, 72, 78, 1, 23, 43, 79, 12]
+Epoch [20/100], Batch [10/15], Loss: 2.1120, Accuracy: 44.67%
+Epoch [20] Training Loss: 2.0447, Training Accuracy: 48.49%
+Epoch [20] Validation Loss: 3.8017, Validation Accuracy: 13.44%
+
+No improvement for 2 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/jiggasha/p14_c_jiggasha.mp4', 'DATASET/ghori/p6_c_ghori.mp4', 'DATASET/golarhaar/p3_f_golarhaar.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [66, 30, 24, 8, 57, 70, 14, 66]
+[DEBUG] preds: [69, 89, 24, 88, 57, 70, 14, 66]
+Epoch [21/100], Batch [10/15], Loss: 2.0088, Accuracy: 50.67%
+Epoch [21] Training Loss: 2.1001, Training Accuracy: 46.93%
+Epoch [21] Validation Loss: 3.7787, Validation Accuracy: 13.56%
+
+No improvement for 3 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/mask/p13_f_mask.mp4', 'DATASET/protijogita/p11_c_protijogita.mp4', 'DATASET/sandal/p15_f_sandal.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [70, 64, 49, 40, 39, 6, 86, 36]
+[DEBUG] preds: [70, 89, 49, 18, 39, 6, 86, 84]
+Epoch [22/100], Batch [10/15], Loss: 2.1305, Accuracy: 42.67%
+Epoch [22] Training Loss: 2.0796, Training Accuracy: 48.47%
+Epoch [22] Validation Loss: 3.7730, Validation Accuracy: 12.67%
+
+No improvement for 4 epoch(s).
+
+
+[DEBUG] One training batch loaded:
+  inputs.shape = torch.Size([150, 3, 30, 224, 224])
+  labels.shape = torch.Size([150])
+  sample videos = ['DATASET/kothay/p13_c_kothay.mp4', 'DATASET/sroddha/p4_c_sroddha.mp4', 'DATASET/soktishali/p8_f_soktishali.mp4']
+[DEBUG] Model output logits shape: torch.Size([150, 90])
+[DEBUG] labels: [41, 21, 17, 39, 61, 53, 19, 47]
+[DEBUG] preds: [13, 1, 55, 39, 61, 71, 84, 47]
+Epoch [23/100], Batch [10/15], Loss: 2.1185, Accuracy: 44.67%
+Epoch [23] Training Loss: 2.0633, Training Accuracy: 48.33%
+Epoch [23] Validation Loss: 3.7746, Validation Accuracy: 12.83%
+
+No improvement for 5 epoch(s).
+
+Early stopping triggered!
+Training completed. Final model saved to ./checkpoints/final_model.pth

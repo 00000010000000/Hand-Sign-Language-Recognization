@@ -1,0 +1,69 @@
+nohup: 忽略输入
+Processing videos, this may take a while ...
+[DATASET] (1/2160) Loading video: DATASET/subidha/p4_f_subidha.mp4
+[DATASET] (2/2160) Loading video: DATASET/subidha/p14_c_subidha.mp4
+[DATASET] (3/2160) Loading video: DATASET/subidha/p1_f_subidha.mp4
+...
+[DATASET] (2158/2160) Loading video: DATASET/attio/p4_f_attio.mp4
+[DATASET] (2159/2160) Loading video: DATASET/attio/p14_f_attio.mp4
+[DATASET] (2160/2160) Loading video: DATASET/attio/p8_c_attio.mp4
+[DATASET] Finished processing 2160 videos.
+[DATASET] Saving dataset cache to: train_dataset.pt
+[DATASET] Cache saved successfully.
+Processing videos, this may take a while ...
+[DATASET] (1/540) Loading video: DATASET/subidha/p10_c_subidha.mp4
+[DATASET] (2/540) Loading video: DATASET/subidha/p9_c_subidha.mp4
+[DATASET] (3/540) Loading video: DATASET/subidha/p10_f_subidha.mp4
+...
+[DATASET] (538/540) Loading video: DATASET/attio/p5_f_attio.mp4
+[DATASET] (539/540) Loading video: DATASET/attio/p10_f_attio.mp4
+[DATASET] (540/540) Loading video: DATASET/attio/p10_c_attio.mp4
+[DATASET] Finished processing 540 videos.
+[DATASET] Saving dataset cache to: test_dataset.pt
+[DATASET] Cache saved successfully.
+/home/user5/anaconda3/envs/cs7643-a1/lib/python3.14/site-packages/torch/nn/modules/transformer.py:392: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+Number of training samples: 2160
+Number of test samples: 540
+Unique labels: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23
+ 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47
+ 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71
+ 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89]
+Number of classes: 90
+Samples per class: [24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+ 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+ 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24
+ 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24]
+
+Epoch [10] Training Loss: 3.1301, Training Accuracy: 20.00%
+Epoch [10] Validation Loss: 4.0278, Validation Accuracy: 11.78%
+
+Epoch [20] Training Loss: 2.1758, Training Accuracy: 41.99%
+Epoch [20] Validation Loss: 4.0498, Validation Accuracy: 11.59%
+
+Epoch [30] Training Loss: 2.0678, Training Accuracy: 43.33%
+Epoch [30] Validation Loss: 3.9447, Validation Accuracy: 11.96%
+
+Epoch [40] Training Loss: 2.1779, Training Accuracy: 41.57%
+Epoch [40] Validation Loss: 3.9651, Validation Accuracy: 11.78%
+
+Epoch [50] Training Loss: 2.1517, Training Accuracy: 42.27%
+Epoch [50] Validation Loss: 3.9506, Validation Accuracy: 11.23%
+
+Epoch [60] Training Loss: 2.1314, Training Accuracy: 42.96%
+Epoch [60] Validation Loss: 3.9378, Validation Accuracy: 11.96%
+
+Epoch [70] Training Loss: 2.1056, Training Accuracy: 44.54%
+Epoch [70] Validation Loss: 3.9362, Validation Accuracy: 12.32%
+
+Epoch [80] Training Loss: 2.0710, Training Accuracy: 44.07%
+Epoch [80] Validation Loss: 3.9662, Validation Accuracy: 12.14%
+
+Epoch [90] Training Loss: 2.1722, Training Accuracy: 41.11%
+Epoch [90] Validation Loss: 3.9669, Validation Accuracy: 11.59%
+
+Epoch [100] Training Loss: 2.1034, Training Accuracy: 43.75%
+Epoch [100] Validation Loss: 3.9673, Validation Accuracy: 11.41%
+
+Training completed. Final model saved to ./checkpoints/final_model.pth
+

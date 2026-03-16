@@ -1,0 +1,35 @@
+nohup: 忽略输入
+/home/user5/anaconda3/envs/cs7643-a1/lib/python3.14/site-packages/torch/nn/modules/transformer.py:392: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
+  warnings.warn(
+Skipped videos:  0
+1780
+Class Weights: tensor([0.4855, 0.5639, 0.6992, 0.7945, 0.7600, 0.7600, 0.7945, 0.7945, 0.8324,
+        0.8740, 0.8740, 0.9200, 0.9200, 0.9200, 0.9200, 0.9200, 0.9200, 0.9200,
+        0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711,
+        0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711, 0.9711,
+        1.0282, 0.9711, 1.0282, 0.9711, 0.9711, 0.9711, 1.0282, 1.0282, 0.9711,
+        0.9711, 1.0282, 0.9711, 1.0282, 0.9711, 0.9711, 1.0925, 1.0282, 1.0282,
+        1.0282, 1.0282, 1.0925, 1.0925, 1.0282, 1.0925, 1.0925, 1.0282, 1.0282,
+        1.0282, 1.0282, 1.0925, 1.0282, 1.0925, 1.0925, 1.0282, 1.0282, 1.0925,
+        1.0282, 1.0282, 1.0282, 1.0282, 1.1653, 1.0925, 1.1653, 1.0925, 1.1653,
+        1.0925, 1.0925, 1.0925, 1.0925, 1.0925, 1.1653, 1.0925, 1.1653, 1.0925,
+        1.0925, 1.0925, 1.0925, 1.0925, 1.0925, 1.0925, 1.1653, 1.0925, 1.0925,
+        1.0925])
+Sampler created with 1780 samples
+Skipped videos:  0
+258
+Epoch [1/100], Batch [10/149], Loss: 5.4136, Accuracy: 8.33%
+Epoch [1/100], Batch [20/149], Loss: 3.8843, Accuracy: 8.33%
+Epoch [1/100], Batch [30/149], Loss: 2.3725, Accuracy: 58.33%
+Epoch [1/100], Batch [40/149], Loss: 1.7541, Accuracy: 66.67%
+Epoch [1/100], Batch [50/149], Loss: 1.3780, Accuracy: 75.00%
+Epoch [1/100], Batch [60/149], Loss: 0.3819, Accuracy: 100.00%
+Epoch [1/100], Batch [70/149], Loss: 0.4389, Accuracy: 91.67%
+Epoch [1/100], Batch [80/149], Loss: 0.1617, Accuracy: 100.00%
+Epoch [1/100], Batch [90/149], Loss: 0.7547, Accuracy: 83.33%
+Epoch [1/100], Batch [100/149], Loss: 0.3906, Accuracy: 91.67%
+Epoch [1/100], Batch [110/149], Loss: 0.1308, Accuracy: 100.00%
+Epoch [1/100], Batch [120/149], Loss: 0.1225, Accuracy: 100.00%
+Epoch [1/100], Batch [130/149], Loss: 0.0897, Accuracy: 100.00%
+Epoch [1/100], Batch [140/149], Loss: 0.0920, Accuracy: 100.00%
+Epoch [1/100] Training Loss: 1.3367, Training Accuracy: 76.17%
